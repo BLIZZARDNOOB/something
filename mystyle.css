@@ -1,0 +1,146 @@
+p {
+   text-transform: uppercase;
+
+}
+
+body {
+	background-image: url("a/blue.png");
+    background-size:100%;
+    align-content: center;
+    align-items: center;
+    align-self: center; 
+}
+
+.navigation-menu ul {
+	list-style-type:none;
+	width: 100%;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	background-color:#842593
+}
+
+.navigation-menu li {
+	float:left;
+	font-size:20px;
+}
+
+.navigation-menu a {
+	display:block;
+	padding-top:5px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:5px;
+	margin:10px;
+	background-color:#632f8e;
+	color:white;
+}
+
+.navigation-menu .active{
+	color:black;
+	background-color:yellow;
+	font-weight:bold;
+}
+ .dropdown p {
+ 	color:blue;
+ 	font-size:15px;
+}
+.dropdown-content{
+	color:#f9f9f9;
+	position:absolute;
+	padding-left:10px;
+    padding-right:10px;
+    box-shadow:0px 8px 16px 0px;
+}
+
+
+.animate-1{
+	animation-name:my-animation;
+	animation-duration:6s;
+}
+
+@keyframes my-animation{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+.animate-2{
+	animation-name:blinking-bg;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+    animation-delay:4s;
+    animation-direction:alternate;
+}
+
+`@keyframes blinking-bg{
+	0%{background-color:#bff442; }
+	40%{background-color:#f9ff63;}
+	80%{ background-color:#ffd263;}
+	100%{ background-color:#ff8c63;}
+}
+
+.animate-3 {
+	animation-name:fade-in;
+	animation-duration:6s;
+	animation-direction:reverse;
+}
+@keyframes fade-in{
+	from{opacity:0;
+ 		 width:100px;
+	transform:skew(-80deg);
+
+	}
+	to{ opacity:1;
+		width:300px;
+	    transform:rotate(0deg);
+	 }
+	 .jumbotron h1{
+     	background-color:#842593;
+     	color:purple;
+	 }
+	 .jumbotron *{
+	 	padding-left:50px;
+	 }
+}
+
+
+
+.god h4 h2 p{
+	padding:50px;
+	background-color:white;
+}
+
+
+.god2 h2{
+	color:purple;
+	
+	font-size:15px;
+}
+
+
+.main-title h2{
+	font-size:20px;
+   	background-color:white;
+}
+
+.card-deck .card{
+	width:400px;
+    
+}
+
+.card-deck .card img{
+	size:200px;
+    
+}
+
+.card-deck .card :hover {
+	background-color: red;
+	color:white;
+    
+}
+
+.badge .make-blue{
+	background-color:blue;
+}
+
+
