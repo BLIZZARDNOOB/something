@@ -1,0 +1,148 @@
+p {
+	margin:top-bottom-margin left-right-margin;
+}
+
+.timeline{
+		position: relative;
+		max-width: 1200px;
+		margin: 0 auto;
+}
+
+.container{
+	padding:10px 40px;
+	width:50%;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.content{
+	padding:20px 30px;
+	background-color: white;
+	position:relative;
+	border-radius: 6px;
+}
+
+.left{
+	left:0;
+}
+
+.right{
+	left:50%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #474e5D;
+	font-family: verdana;
+}
+
+.timeline::after{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-left:-3px;
+
+	content:'';
+	width: 6px;
+	background-color: white;
+
+	border-radius: 50%;
+	border:4px solid #FF9F55;
+}
+
+
+.container::after{
+	content:'';
+	position:absolute;
+	top:15px;
+	right:-17px;
+
+	width: 25px;
+	height:25px;
+	background-color: white;
+
+	border-radius:50%;
+	border:4px solid #FF9F55;
+	z-index: 1;
+}
+
+.right::after{
+	left:-17px;
+}
+
+/*Arrows on the timeline*/
+.container::before {
+	content:" ";
+	position: absolute;
+	height: 0;
+	width: 0;
+	border-style: solid;
+	top: 22px;
+	z-index: 1;
+}
+
+.left::before {
+	right:30px;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+}
+
+.right::before{
+	left:30px;
+	border-width: 10px 10px 10px 0;
+	border-color:transparent white transparent transparent;
+}
+
+/*Responsiveness on the screens less than 600px wide*/
+@media screen and (max-width: 600px){
+	/*Place the timeline to the left*/
+	.timeline::after{
+		left:31px;
+	}
+
+	/*Full-width containers */
+	.container{
+		width:100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	/* Remove left padding of right containers*/
+	.right{
+		left:0%;
+	}
+	/* Make sure that all arrows are pointing leftwards */
+	.container::before{
+		left:60px;
+		border-style:solid;
+		border-width: 10px 10px 10px 0;
+		border-color:transparent white transparent transparent;
+	}
+
+	.left::after, .right::after{
+		left:15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

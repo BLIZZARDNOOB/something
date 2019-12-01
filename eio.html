@@ -1,0 +1,76 @@
+<html>
+      
+      <head>
+            <title>funfunfunfunfunfunfunfunfunfunfun</title>      
+                 <link rel="stylesheet" href="css.css/mystyle.css">
+  
+     </head>
+      <body>
+         <h1> oof </h1>
+
+
+          <div class="navigation-menu">   
+      <ul>
+        <li> <a href="html2.html">A clickable thing.. </a> </li>
+     	<li> <a href="somthing.html">Click here for gift card.</a> </li>
+      <li> <a href="html.html"> Click here for something random. </a> </li>
+     <li><a href="GOD.html">ssssssssss</a></li>
+     <li><a href="EDD.html"> imma bit drunk </a></li>
+     <li><a href="eio.html" class="active"> lazytoputspaces </a></li>
+     </ul>
+
+      </div>
+
+
+      <button onclick="getLocation()"> click for fUnFuNfUnFuNfUnfUnFuNfUnFuNfUnfUnFuNfUnFuNfUnfUnFuNfUnFuNfUn  </button>
+
+
+      <p id="location"> </p>
+      <script>
+        const placeholder= document.getElementById("location");
+        function showPosition(position){
+          placeholder.innerHTML = 
+          "Latitude:" + position.coords.latitude +
+          "<br>Longitude"+ position.coords.longitude;
+        }
+
+        function getLocation(){
+          if (navigator.geolocation){
+          navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+          placeholder, innerHTML = "Geolocation is not supported by this browser";
+        } function showError(error) {
+          switch(error.code){
+            case error.PERMISSION_DENIED:
+            placeholder.innerhtml = "User denied the request for Geolocation.";
+
+            case error.POSITION_UNAVAILABLE:
+                placeholder.innerHTML = "Location information is unavailable.";
+            case error.TIMEOUT:
+            placeholder.innerHTML = "The request to get user location timed out";
+            case error.UNKNOWN_ERROR:
+                placeholder.innerHTML="An unknown error occured";
+          }
+        }
+      }
+
+      </script>
+
+
+
+
+
+
+      </script>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    <li> <a href="https://fnafar.gsc.im/1/earlyaccess?ticket=tec-33pz-ykg">click this for even more  fUnFuNfUnFuNfUn </a></li>
+
+
+
+</body>
